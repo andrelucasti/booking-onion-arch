@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:latest
+    hostname: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: andrelucasdeveloper
+      POSTGRES_DB: andrelucasdeveloper
+    ports:
+    - "5432:5432"

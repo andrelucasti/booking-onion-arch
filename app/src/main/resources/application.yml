@@ -1,0 +1,16 @@
+server:
+  port: 9958
+
+spring:
+  datasource:
+    jdbcUrl: jdbc:postgresql://localhost:5432/andrelucasdeveloper
+    username: andrelucasdeveloper
+    password: 123456
+  flyway:
+    enabled: true
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        ddl-auto: none
