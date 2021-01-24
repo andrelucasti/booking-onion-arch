@@ -11,7 +11,7 @@ public class HotelController {
 
     private HotelService hotelService;
 
-    public HotelController(HotelService hotelService) {
+    public HotelController(final HotelService hotelService) {
         this.hotelService = hotelService;
     }
 
