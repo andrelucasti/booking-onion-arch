@@ -9,8 +9,8 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>repository</artifactId>
-	<name>repository</name>
+	<artifactId>data-provider</artifactId>
+	<name>data-provider</name>
 
 	<dependencies>
 		<dependency>

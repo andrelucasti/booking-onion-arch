@@ -1,0 +1,5 @@
+CREATE TABLE BOOKING(
+    UUID uuid PRIMARY KEY,
+    CUSTOMER_UUID uuid,
+    HOTEL_UUID uuid
+)

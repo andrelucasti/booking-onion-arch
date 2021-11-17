@@ -22,7 +22,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.booking</groupId>
-			<artifactId>repository</artifactId>
+			<artifactId>data-provider</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
