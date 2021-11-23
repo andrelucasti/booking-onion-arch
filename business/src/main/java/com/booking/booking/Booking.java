@@ -6,8 +6,8 @@ import lombok.Getter;
 
 import java.util.UUID;
 
-@Builder
 @Getter
+@Builder
 public class Booking {
     private UUID hotelUuid;
     private Customer customer;

@@ -3,6 +3,8 @@ package com.booking.customer;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public class CustomerRepositoryImpl implements CustomerRepository{
 
@@ -16,8 +18,16 @@ public class CustomerRepositoryImpl implements CustomerRepository{
     }
 
     @Override
-    public void save(final Customer customer) {
+    public Customer save(final Customer customer) {
         final var customerEntity = conversionService.convert(customer, CustomerEntity.class);
-        customerRepositoryEntity.save(customerEntity);
+        final var customerSaved = customerRepositoryEntity.save(customerEntity);
+
+        return conversionService.convert(customerSaved, Customer.class);
+    }
+
+    @Override
+    public Optional<Customer> findBy(final String email) {
+        return customerRepositoryEntity.findByEmail(email)
+                .map(customerEntity -> conversionService.convert(customerEntity, Customer.class));
     }
 }
