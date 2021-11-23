@@ -44,3 +44,17 @@ In this project I did it as follows
      "name":"Japaratinga Resort",
      "description": "Melhor Resort de Maceió"
  }`
+
+### Endpoints
+- http://localhost:9958/booking/reserve
+
+
+### Json Model
+
+`{
+"hotelUUID":"44f38adb-8749-47bd-9b48-1b88f576ae22",
+    "customer":{
+    "name":"Andre Lucas",
+    "email": "andrelucas@gmail.com"
+    }
+}`
